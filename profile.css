@@ -1,0 +1,702 @@
+*{
+    margin:0;
+    padding : 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bc1:#171a1c;
+    --bc2:#22282a;
+    
+    --padding:8%;
+}
+html{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home{
+    width:100%;
+    height: 100vh;
+    background-color: var(--bc1);
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color:var(--primaryColor);
+}
+.s span{
+    font-size:1.7rem;
+}
+h2{
+    font-size: 3.3rem;
+    letter-spacing: 0.12rem;
+    color:var(--lightColor);
+}
+.home nav{
+    
+    padding-top:2.2rem;
+    padding-left:var(--padding);
+    padding-right:var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin:1.9rem 2.4rem;
+}
+
+.home nav ul li a{
+    color:var(--lightColor);
+    text-decoration: none;
+    font-size: 1.9rem;
+    transition:all 0.5s ease;
+}
+.home nav ul li a:hover{
+    color:var(--primaryColor);
+
+}
+ .btn{
+    background-color: var(--primaryColor);
+    color:var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding:0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    border: 2px solid transparent;
+
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.container-text{
+    position: relative;
+    bottom:20%;
+    left:10%;
+}
+h1{
+    font-size:4.65rem;
+    margin:1.7rem 0;
+    color:var(--lightColor);
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 1.5rem;
+    color:var(--lightColor);
+    margin-bottom:50px;
+}
+h4{
+    font-size: 1.5rem;
+    color:var(--lightColor)
+}
+.social{
+    position: relative;
+    left:-11%;;
+}
+
+.social a i{
+    font-size: 2.6rem;
+    margin:19px;
+    color:var(--lightColor);
+    transition: all 0.6s ease;
+}
+.social a i:hover{
+    color:var(--primaryColor);
+   
+}
+
+.container-img{
+    position: relative;
+    left:25%;
+    top:-13%;
+}
+.container-img img:hover{
+animation: hh 2s ease;
+}
+@keyframes hh{
+    0%{
+       
+    }
+    50%{
+        transform: translateX(-40%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*  /////about\\\\\\\    */
+
+.about{
+    background-color: var(--bc2);
+    padding:var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+.about .img{
+    width:35%;
+}
+.about .img img{
+    width:100%;
+}
+.about .text{
+    width:60%;
+    margin-top:40px;
+    color:var(--secondaryColor);
+    font-size: 2.4rem;
+    line-height: 70px;
+}
+
+
+/* survices */
+
+
+.survieces{
+    background-color: var(--bc1);
+    padding:2rem var(--padding);
+    
+}
+.survieces .text-center{
+    text-align: center;
+    margin-bottom:40px;
+}
+.box{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    margin-bottom:200px;
+}
+.survieces .box .card {
+    width:400px;
+    height: 400px;
+    padding:40px;
+    background-color: var(--bc2);
+    overflow: hidden;
+    color:white;
+    position: relative;
+    transition: all 0.6s ease;
+    border-radius: 11px;
+  
+}
+.survieces .box .card:hover{
+    /* border:2px solid var(--primaryColor); */
+    transform: scale(1.1);
+    box-shadow: 1px 3px 20px var(--primaryColor);
+}
+.box .card i{
+    font-size: 3.9rem;
+    color:var(--primaryColor);
+    position: absolute;
+    top:10;
+    left:170px;
+    text-align: center;
+}
+.box .card:nth-child(3) h5{
+    color:var(--primaryColor);
+    position: absolute;
+    top:120px;
+    left:115px;
+    font-size: 2.7rem;
+}
+
+.box .card:nth-child(2) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 115px;
+    font-size: 2.7rem;
+}
+
+.box .card:nth-child(1) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    font-size: 2.7rem;
+}
+
+.box .card:nth-child(4) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left:40px;
+    font-size: 2.7rem;
+}
+
+.box .card .text{
+    position: absolute;
+    top:200px;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+.about .text .images{
+    color:#ff274b;
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+    text-align:center;
+    align-items:center;
+    
+}
+.about .text .images .borim{
+    width:220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: var(--bc1);
+    text-align:center;
+    padding-top:60px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+
+.about .text .images .borim:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 3px 10px var(--primaryColor)
+}
+.about .text h1{
+    text-align: center;
+    margin-bottom:100px ;
+}
+
+
+/*      projects          */
+
+
+
+.project{
+    background-color: var(--bc1);
+        padding: 2rem var(--padding);
+}
+.project h2{
+    text-align: center;
+    font-size: 3.7rem;
+    color:var(--primaryColor);
+    padding:60px;
+}
+.project .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+.project .cards .card{
+    width:23%;
+    background-color: var(--bc2);
+    height: 640px;
+    border-radius: 6%;
+    position: relative;
+
+}
+
+.project .cards .card img{
+    width:100%;
+    margin-bottom:10px;
+    border-top-left-radius:6% ;
+    border-top-right-radius: 6%;
+}
+
+.project .cards .card .button{
+    position: absolute;
+    bottom:40px;
+    right: 80px;
+    font-size:1.9rem;
+    color:var(--primaryColor);
+    cursor: pointer;
+}
+.project .cards .card i{
+    position: absolute;
+        bottom: 30px;
+        right: 30px;
+        font-size: 2.9rem;
+        color: var(--primaryColor);
+        cursor: pointer;
+}
+
+.project .cards .card .text  {
+    padding-left:20px;
+    padding-right: 20px;
+    }
+.project .cards .card .text h2{
+    font-size: 2.2rem;
+    color:var(--lightColor);
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+.project .cards .card .text p{
+    font-size: 1.6rem;
+    color:var(--lightColor);
+    text-align: center;
+    line-height: 40px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :5rem var(--padding);
+    background-color: var(--bc2);
+    
+}
+footer p{
+    color:var(--secondaryColor);
+    font-size: 2.2rem;
+    padding:20px;
+}
+
+.footer .card {
+    width: 700px;
+    height: 300px;
+    padding: 40px;
+    background-color: var(--bc1);
+    overflow: hidden;
+    color: white;
+    position: relative;
+    transition: all 0.6s ease;
+    border-radius: 11px;
+    margin-left: 20px;
+}
+
+
+.footer .card i {
+    font-size: 3.9rem;
+    color: var(--primaryColor);
+    position: absolute;
+    top: 10;
+    left: 45%;
+    text-align: center;
+    align-items: center;
+}
+
+.footer .card h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 130px;
+    left: 40%;
+    font-size: 2.7rem;
+    text-align: center;
+}
+.footer .card .textt{
+    position: absolute;
+    top: 200px;
+    left:0;
+    font-size: 2.5rem;
+    color:var(--lightColor)
+}
+.footer .card .text {
+    position: absolute;
+    top: 200px;
+    font-size: 2.5rem;
+    left:30%;
+    color:var(--lightColor)
+}
+
+.footer .cards {
+    display: flex;
+    flex-direction: row;
+}
+
+/*                Menu           */
+
+.home nav .menu{
+    position: relative;
+    top:0;
+    right: 0;
+    width:50px;
+    height: 50px;
+    display: none;
+}
+.uil-bars{
+    color:#ff274b;
+    font-size: 3.2rem;
+
+}
+
+
+
+/*
+-------------------------------------------------------
+-----------------media query---------------------------
+-------------------------------------------------------
+*/
+
+
+
+
+
+
+
+@media screen and (max-width:676px) {
+    :root{
+        --padding:2%;
+    }
+    html{
+        font-size:11px;
+    }
+
+    .container-img {
+        position: relative;
+        left: 25%;
+        top: -13%;
+        display:none;
+    }
+
+    nav > a{
+        display:none;
+    }
+        nav ul {
+            display:  none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bc1);
+            transition: all 2s ease;
+        }
+    nav ul.active{
+        display:block;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height: 100vh;
+        /* transition: all 3s ease; */
+        background-color: var(--bc1);
+    }
+    nav ul.active li{
+        padding:11px;
+    }
+
+    nav{
+        position: fixed;
+        width: 100vw;
+        padding: 60px;
+        top:0;
+        left:0;
+        right:0;
+        height: 20px;
+        padding-top:0;
+        border-bottom: 1px solid var(--bc2);
+        z-index:100;
+    }
+   .home nav ul li{
+        display: block;
+        text-align: center;
+        margin:60px;
+    }
+    /* nav h2{
+            margin-left: 28px;
+    } */
+    .social {
+        position: relative;
+        left: -44%;
+        top:25%;
+        display:flex;
+        justify-content: space-between;
+
+    }
+
+    .social a i {
+        font-size: 2.2rem;
+        margin: 19px;
+        display: inline-block;
+        color: var(--lightColor);
+        transition: all 0.6s ease;
+    }
+    .content{
+        margin-top:8.9rem;
+    }
+    .btn{
+        font-size:1.8rem;
+    }
+
+    .home nav .menu {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-top:10px;
+        
+    }
+    .home nav ul .menu i{
+        color:var(--primaryColor);
+        font-size:2.9rem ;
+        position: relative;
+        left:320px;
+        top:20px;
+    }
+    .about{
+        width: 100%;
+    }
+    /*  about */
+
+    .about .img{
+        display: none;
+    }
+
+    .about .text {
+        width: 90%;
+        margin-top:0;
+        color: var(--secondaryColor);
+        font-size: 1.4rem;
+        line-height: 20px;
+        padding:0;
+        text-align: center;
+    }
+    .about .text h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+  
+
+   
+    .survieces .box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .survieces .box .card{
+        width:100%;
+        margin-top:45px;
+        height: 370px;
+    }
+
+    .survieces .box .card i{
+        text-align: center;
+    }
+.box .card:nth-child(1) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    font-size: 2.7rem;
+}
+.box .card:nth-child(2) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    font-size: 2.7rem;
+}
+.box .card:nth-child(3) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 135px;
+    font-size: 2.7rem;
+}
+.box .card:nth-child(4) h5 {
+    color: var(--primaryColor);
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    font-size: 2.7rem;
+}
+
+.about .text h1{
+    text-align: center;
+}
+
+.about .images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.about .text .images .borim{
+    width:100px;
+    height: 80px;
+    padding-top:30px;
+}
+
+/* footer */
+
+.footer {
+   display: flex;
+   flex-direction: column;
+}
+.footer h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+.footer .cards{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+}
+.footer .cards .card{
+    width:40%;
+    position: relative;
+    margin-left: 0;
+}
+.footer .cards .card:nth-child(2) {
+    width: 60%;
+   margin-left: 10px;
+}
+
+.footer .cards .card i{
+    font-size: 2.6rem;
+}
+.footer .cards .card h5{
+    font-size: 1.6rem;
+}
+
+.footer .cards .card .text{
+position: absolute;
+left:25px;
+font-size: 1rem;
+}
+
+.footer .cards .card .textt {
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+.project{
+    width:100vw;
+}
+.project .cards{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.project .cards .card{
+    width:100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+.project .cards .card:last-child(){
+    padding-bottom: 30px;
+}
+
+}
